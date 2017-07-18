@@ -1,0 +1,38 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  max-width: 960px;
+  margin: auto;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 2.32rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 1.5rem;
+  margin: auto 1rem auto 0.5rem;
+}
+
+header span {
+  font-family: Helvetica;
+  font-size: 1rem;
+  margin: 0.66rem 0;
+}
+
+#topbanner {
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
