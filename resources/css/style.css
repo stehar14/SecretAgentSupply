@@ -5,19 +5,23 @@ html {
 body {
   font-family: Helvetica;
   color: white;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0;
+
+  margin: 0;
   background-color: white;
 }
 
 header {
   background-color: black;
   color: white;
+
+}
+
+.logo {
   height: 2.32rem;
   margin: auto auto 0 auto;
   display: flex;
   align-items: center;
+  max-width: 960px;
 }
 
 header img {
@@ -37,23 +41,27 @@ header span {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding-top: 9rem;
+
 }
 
 #bannertext {
   background-color: black;
   width: 20em;
   font-weight: bold;
-  position: absolute;
-  z-index: 20;
-  margin-top: 9rem;
-  margin-left: 3rem;
+  position: relative;
+
   padding: 2rem 3rem;
 }
 
 #bannertext p {
   font-size: 1rem;
-  padding-bottom: 0.25rem;
+
 }
 
 #bannertext h1 {
