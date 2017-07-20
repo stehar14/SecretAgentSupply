@@ -1,3 +1,7 @@
+/*   written by: Steve Harold
+     7/17/17-7/?/17
+     Secret Agent Supply   */
+
 html {
   font-size: 18px;
 }
@@ -9,10 +13,16 @@ body {
   background-color: white;
 }
 
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/*header*/
+
 header {
   background-color: black;
   color: white;
-
 }
 
 .logo {
@@ -34,17 +44,14 @@ header span {
   margin: 0.66rem 0;
 }
 
+/* banner and headline */
+
 #topbanner {
   height: 25rem;
   background-image: url("../images/moto.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.container {
-  max-width: 960px;
-  margin: auto;
 }
 
 #topbanner .container {
@@ -56,18 +63,18 @@ header span {
   width: 20em;
   font-weight: bold;
   position: relative;
-
   padding: 2rem 3rem;
 }
 
 #bannertext p {
   font-size: 1rem;
-
 }
 
 #bannertext h1 {
   font-size: 2rem;
 }
+
+/* navbar */
 
 nav {
   background-color: firebrick;
@@ -79,6 +86,8 @@ nav .container {
   margin: auto;
   padding: 0.75rem 1.5rem;
 }
+
+/* product pictures & titles */
 
 main {
   margin-top: 3rem;
@@ -120,6 +129,8 @@ main h4 {
   text-align: center;
 }
 
+/* Location and Hours of Operation */
+
 #info .container {
   display: flex;
   justify-content: space-between;
@@ -143,6 +154,8 @@ main h4 {
   margin-bottom: 4rem;
 }
 
+/* footer */
+
 footer {
   background-color: black;
   height: 5rem;
@@ -154,5 +167,24 @@ footer .container {
 
 footer span {
   text-align: left;
+}
+
+/* MEDIA QUERIES */
+
+/*if width < 1024px (tablet)*/
+
+@media only screen and (max-width:1024px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  #firstpic, #secondpic {
+    flex-basis: 45%;
+  }
+
+  #thirdpic {
+    display: none;
+  }
 
 }
