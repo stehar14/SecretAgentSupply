@@ -5,7 +5,6 @@ html {
 body {
   font-family: Helvetica;
   color: white;
-
   margin: 0;
   background-color: white;
 }
@@ -46,8 +45,10 @@ header span {
 .container {
   max-width: 960px;
   margin: auto;
-  padding-top: 9rem;
+}
 
+#topbanner .container {
+  padding-top: 9rem;
 }
 
 #bannertext {
@@ -70,15 +71,88 @@ header span {
 
 nav {
   background-color: firebrick;
+}
+
+nav .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
   padding: 0.75rem 1.5rem;
 }
 
+main {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
+main .container {
+  display: flex;
+  justify-content: space-between;
+}
 
+#firstpic, #secondpic, #thirdpic {
+  background-color: black;
+  border: 4px solid black;
+  overflow: hidden;
+  flex-basis: 30%;
+}
 
-nav span {
+main img {
+  background-color: white;
+  max-height: 9rem;
+  padding: 2rem;
+  max-width: 10rem;
+  object-fit: contain;
+}
+
+.image {
+  background-color: white;
+  width: 100%;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+}
+
+main h4 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin: auto;
+  text-align: center;
+}
+
+#info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#info h4 {
+  background-color: black;
+  padding: 1rem 2rem;
+}
+
+#info p {
+  color: black;
+  padding: 0.25rem 0;
+}
+
+#location, #hours {
+  flex-basis: 35%;
+}
+
+#info {
+  margin-bottom: 4rem;
+}
+
+footer {
+  background-color: black;
+  height: 5rem;
+}
+
+footer .container {
+  padding: 2rem 0;
+}
+
+footer span {
+  text-align: left;
 
 }
