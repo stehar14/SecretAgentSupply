@@ -80,13 +80,16 @@ nav {
   background-color: firebrick;
 }
 
-nav .container {
+#navbar {
   display: flex;
   justify-content: space-between;
   margin: auto;
   padding: 0.75rem 1.5rem;
 }
 
+#menu {
+  display: none;
+}
 /* product pictures & titles */
 
 main {
@@ -158,14 +161,11 @@ main h4 {
 
 footer {
   background-color: black;
-  height: 5rem;
+  height: 10rem;
 }
 
 footer .container {
-  padding: 2rem 0;
-}
-
-footer span {
+  padding: 4.5rem 0;
   text-align: left;
 }
 
@@ -180,11 +180,76 @@ footer span {
   }
 
   #firstpic, #secondpic {
-    flex-basis: 45%;
+    flex-basis: 47%;
   }
 
   #thirdpic {
     display: none;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  #bannertext p {
+    font-size: 0.77rem
+  }
+
+  #bannertext h1 {
+    padding-top: .5rem;
+    font-size: 1rem;
+  }
+
+  #topbanner {
+    height: 15rem;
+  }
+
+  #topbanner .container {
+    padding-top: 10rem;
+  }
+
+  #bannertext {
+    padding: 1rem 2rem;
+  }
+
+  #firstpic {
+    flex-basis: 90%;
+  }
+
+  #secondpic, #thirdpic {
+    display: none;
+  }
+
+  main .container {
+    justify-content: center;
+  }
+
+  #info .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #location p {
+    margin-bottom: .5rem;
+  }
+
+  #location, #hours {
+    width: 90%
+  }
+
+  footer .container {
+    text-align: center;
   }
 
 }
